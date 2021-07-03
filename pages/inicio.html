@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDH - Inicio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/inicio.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <!--<img src="../img/logo.png" class="logo">-->
+                <img src="../img/logo1.svg" class="logo">
+            </a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Rutas</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Algo Acá</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit mas relleno para que no 
+                    salga tan pelao la cosa...</p>
+                <a href="#">Leer más</a>
+            </div>
+            <div class="imgBox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="../img/i1.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="../img/i2.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="../img/i3.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="../img/i4.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="../img/i5.svg" alt=""></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href=""><img src="../img/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="../img/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="../img/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          loop: true,
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+      </script>
+</body>
+</html>
