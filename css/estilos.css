@@ -48,6 +48,11 @@ p {
 	animation: flicker 10s infinite;
 }
 
+a{
+    text-decoration: none;
+    color: #cccccc;
+}
+
 @keyframes t-animation {
 	0% {opacity: 0;}
 	30% {opacity: 1;}

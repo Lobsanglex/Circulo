@@ -18,24 +18,23 @@
             </a>
             <div class="toggle" onclick="toggleMenu()"></div>
             <ul class="navigation">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Rutas</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="el_club.html">El Club</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
             </ul>
         </header>
         <div class="content">
             <div class="textBox">
-                <h2>Algo Acá</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit mas relleno para que no 
-                    salga tan pelao la cosa...</p>
-                <a href="#">Leer más</a>
+                <h2>Recuerda..</h2>
+                <p id="resultado"></a>
             </div>
             <div class="imgBox">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="../img/i1.svg" alt=""></div>
+                      <div class="swiper-slide">
+                          <img src="../img/i1.svg" alt="" onclick="imagen1()">
+                        </div>
                       <div class="swiper-slide"><img src="../img/i2.svg" alt=""></div>
                       <div class="swiper-slide"><img src="../img/i3.svg" alt=""></div>
                       <div class="swiper-slide"><img src="../img/i4.svg" alt=""></div>
@@ -51,31 +50,6 @@
         </ul>
     </section>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 200,
-            modifier: 1,
-            slideShadows: true,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-          loop: true,
-        });
-
-        function toggleMenu(){
-            const menuToggle = document.querySelector('.toggle');
-            const navigation = document.querySelector('.navigation')
-            menuToggle.classList.toggle('active')
-            navigation.classList.toggle('active')
-        }
-      </script>
+    <script src="../js/inicio.js"></script>
 </body>
 </html>

@@ -47,6 +47,7 @@ header .navigation
 {
     position: relative;
     display: flex;
+    z-index: 10;
 }
 header .navigation li
 {
