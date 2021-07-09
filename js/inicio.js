@@ -24,9 +24,12 @@
             menuToggle.classList.toggle('active')
             navigation.classList.toggle('active')
         }
-        
+
         function imagen1(){
-            window.open("miembro1.html","_self");
+            // window.open("miembro1.html","_self");
+            var eti = "<p>Más texto</p>";
+            eti += "<a href='miembro1.html'>Ver más</a>";
+            document.getElementById('prueba').innerHTML = eti;
         }
 
         window.addEventListener("load", aleatorio, false);
@@ -51,6 +54,8 @@
         textos[16] = '" Para llevarse bien no se necesitan las mismas ideas, se necesita el mismo respeto. "';
         textos[17] = '" Cualquier cosa que acelere tú corazón vale la pena...!!! "';
         textos[18] = '" Seguir cuando no crees que puedes más, es lo que te hace diferente a los demás. "';
+        textos[19] = '" El día que comprendí que lo único que me voy a llevar es lo que vivo, empecé a vivir lo que me quiero llevar. "';
+        textos[20] = '" Toma riesgos, si ganas serás más feliz, si pierdes serás más sabio. "';
 
         function aleatorio() {
             document.getElementById("resultado").innerHTML = "";//Limpia el mensaje anterior
