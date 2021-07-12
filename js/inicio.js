@@ -25,11 +25,11 @@
             navigation.classList.toggle('active')
         }
 
-        function imagen1(){
+        function miembro(n){
             // window.open("miembro1.html","_self");
-            var eti = "<p>Más texto</p>";
-            eti += "<a href='miembro1.html'>Ver más</a>";
-            document.getElementById('prueba').innerHTML = eti;
+            var eti = "<p>Miembro "+n+"</p>";
+            eti += "<a href='miembros/miembro"+n+".html'>Ver más</a>";
+            document.getElementById('casilla_miembros').innerHTML = eti;
         }
 
         window.addEventListener("load", aleatorio, false);
