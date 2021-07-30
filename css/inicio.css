@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@font-face {
+    font-family: "font_cdh";
+    src: url("../font/beneg___.ttf");
+    /* src: url("../font/font_Caligo1.0.ttf"); */
+    /* src: url("../font/Maximilian.ttf"); */
+    /* src: url("../font/MaximilianZierbuchstaben.ttf"); */
+    /* src: url("../font/Font Negra.ttf"); */
+    /* src: url("../font/SpartanburgSC-Regular.ttf"); */
+  }
 *
 {
     margin: 0;
@@ -55,6 +65,7 @@ header .navigation
 header .navigation li
 {
     list-style: none;
+    margin-right: 45px;
 }
 header .navigation li a
 {
@@ -64,6 +75,8 @@ header .navigation li a
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
+    font-family: "font_cdh";
+    font-size: 2em;
 }
 /* header .navigation li a:hover
 {
@@ -102,6 +115,18 @@ header .navigation li a
 .content .textBox p
 {
     color: #fff;
+}
+#resultado
+{
+    font-family: "Indie Flower", cursive;
+    /* font-family: "plop"; */
+    font-size: 1.8em;
+    /* font-weight: bold; */
+}
+#casilla_miembros h2
+{
+    font-family: "font_cdh";
+    font-size: 5em;
 }
 /* .content .textBox a
 {
@@ -188,21 +213,27 @@ header .navigation li a
 .swiper-slide img
 {
     position: absolute;
-    height: 300px;
+    /* height: 300px; */
+    height: 460px;
     bottom: 0;
     max-height: 100%;
     /* filter: invert(1); */
 }
+.swiper-container-3d
+{
+    perspective: 600px;
+}
 .swiper-slide img:hover
 {
-    animation: resplandor 2s infinite alternate;
+    animation: resplandor .5s infinite alternate;
 }
 @keyframes resplandor{
     0% {
-        filter: drop-shadow(1px 1px 1px rgb(219, 214, 214));
+        filter: drop-shadow(1px 1px 1px rgb(182, 12, 12));
     }
     100%{
-        filter: drop-shadow(5px 5px 5px rgb(219, 214, 214));
+        filter: drop-shadow(5px 5px 5px rgb(182, 12, 12));
+        /* filter: drop-shadow(5px 5px 5px rgb(219, 214, 214)); */
         /* filter: drop-shadow(7px 7px 15px rgb(165, 6, 6)); */
     }
 }
@@ -275,11 +306,17 @@ header .navigation li a
 .content_t
 {
     position: absolute;
+    top: 280px;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 140px;
     padding: 20px 30px;
+}
+.content_t .apodo
+{
+    font-family: "font_cdh";
+    font-size: 1.9em;
 }
 .content_t .logo_fundador
 {
@@ -318,7 +355,7 @@ header .navigation li a
     color: #000;
 }
 /*SECCION DE LA TARJETA DE MIEMBRO*/
-@media (max-width: 991px) {
+@media (max-width: 800px) {
     header
     {
         padding: 40px;
@@ -347,7 +384,7 @@ header .navigation li a
     }
     #casilla_miembros
     {
-        margin-top: 25%;
+        margin-top: 38%;
     }
     .swiper-slide
     {
@@ -375,7 +412,89 @@ header .navigation li a
     header .navigation li a
     {
         margin: 10px 0;
-        font-size: 1.5em;
+        font-size: 3em;
+        font-weight: 300;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 40px;
+        background: url('../img/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+@media (max-width: 991px) {
+    header
+    {
+        padding: 40px;
+    }
+    section
+    {
+        padding: 150px 40px;       
+    }
+    header .logo
+    {
+        /* filter: invert(0%); */
+        margin-left: 35%;
+    }
+    .sci
+    {
+        left: 40px;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+    .content .textBox,
+    .content .imgBox
+    {
+        max-width: 100%;
+    }
+    #casilla_miembros
+    {
+        margin-top: 38%;
+    }
+    .swiper-slide
+    {
+        height: 300px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: #e51e2a; */
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header .navigation li a
+    {
+        margin: 10px 0;
+        font-size: 3em;
         font-weight: 300;
     }
     .toggle

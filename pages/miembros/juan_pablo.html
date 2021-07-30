@@ -7,6 +7,7 @@
         <title>CDH - Miembro 1</title>
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="../../css/inicio.css">
+        <link rel="stylesheet" type="text/css" href="../../css/miembros.css">
     </head>
 <body>
     <section>
@@ -24,7 +25,19 @@
             </ul>
         </header>
         <div class="content">
-            <h1>Miembro 1</h1>
+            <div class="ficha">
+                <div class="content_f">
+                    <h2>01</h2>
+                    <h3>Card One</h3>
+                    <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Asperiores nam recusandae illo 
+                        odio reprehenderit deserunt culpa eaque 
+                        hic fugiat rem vel, accusantium maxime amet. 
+                        Repudiandae ab inventore officia deleniti recusandae!</p>
+                </div>
+                <img src="../../img/f1.svg">
+            </div>
         </div>
         <ul class="sci">
             <li><a href=""><img src="../../img/facebook.png" alt=""></a></li>
@@ -32,6 +45,15 @@
             <li><a href=""><img src="../../img/instagram.png" alt=""></a></li>
         </ul>
     </section>
+    <script type="text/javascript" src="../../js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".ficha"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
     <script>
         function toggleMenu(){
             const menuToggle = document.querySelector('.toggle');

@@ -37,34 +37,46 @@
               foto = '../img/ft1.png';
               fundador ="<img src='../img/logo_fundador.svg' class='logo_fundador'>";
               nombre = 'Pablo Fuente';
+              apodo = '" Tio Palo "';
               cargo = 'Presidente';
-              ruta = 'miembros/juan_pablo.html';
+              ruta = '<a href="miembros/juan_pablo.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
               break;
             case 2:
               foto = '../img/ft2.png';
               fundador ="<img src='../img/logo_fundador.svg' class='logo_fundador'>";
               nombre = 'Raul Salas';
+              apodo = '" El Chef "';
               cargo = 'Vice Presidente';
-              ruta = 'miembros/raul_salas.html';
+              ruta = '<a href="miembros/raul_salas.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
               break;
             case 3:
               foto = '../img/ft3.png';
               fundador ="<img src='../img/logo_fundador.svg' class='logo_fundador'>";
               nombre = 'Juan Jose';
+              apodo = '" JJ "';
               cargo = 'Miembro';
-              ruta = 'miembros/juan_jose.html';
+              ruta = '<a href="miembros/juan_jose.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
               break;
             case 4:
               foto = '../img/ft4.png';
               nombre = 'Alex Vejar';
+              apodo = '" Falta Apodo"';
               cargo = 'Sargento de Armas';
-              ruta = 'miembros/alex_vejar.html';
+              ruta = '<a href="miembros/alex_vejar.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
               break;
             case 5:
               foto = '../img/fot_t1.png';
               nombre = 'Nicollette Grace';
+              apodo = '" La Profuga "';
               cargo = 'Secretaria';
-              ruta = 'miembros/nicollette_grace.html';
+              ruta = '<a href="miembros/nicollette_grace.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
+              break;
+            case 6:
+              foto = '../img/ft6.png';
+              nombre = 'Fabian Anderson';
+              apodo = '" Falta Apodo "';
+              cargo = 'Prospect';
+              ruta = '';
               break;
             default:
               break;
@@ -82,11 +94,10 @@
             eti += "    </a>";
             eti += fundador;
             eti += "    <h3>"+nombre+"</h3>";
+            eti += "    <h4 class='apodo'>"+apodo+"</h4>";
             eti += "    <div class='textIcon_t'>";
             eti += "      <h4>"+cargo+"</h4>";
-            eti += "      <a href='"+ruta+"'>";
-            eti += "        <i class='fa fa-arrow-right' aria-hidden='true'></i>";
-            eti += "      </a>";
+            eti += ruta;
             eti += "    </div>";
             eti += "  </div>";
             eti += "</div>";
