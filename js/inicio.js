@@ -53,30 +53,37 @@
               foto = '../img/ft3.png';
               fundador ="<img src='../img/logo_fundador.svg' class='logo_fundador'>";
               nombre = 'Juan Jose';
-              apodo = '" JJ "';
+              apodo = '" Jota Jota "';
               cargo = 'Miembro';
               ruta = '<a href="miembros/juan_jose.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
               break;
             case 4:
               foto = '../img/ft4.png';
               nombre = 'Alex Vejar';
-              apodo = '" Falta Apodo"';
+              apodo = '" Ale "';
               cargo = 'Sargento de Armas';
               ruta = '<a href="miembros/alex_vejar.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
               break;
             case 5:
-              foto = '../img/fot_t1.png';
+              foto = '../img/ft5.png';
               nombre = 'Nicollette Grace';
               apodo = '" La Profuga "';
-              cargo = 'Secretaria';
+              cargo = 'Tesorera';
               ruta = '<a href="miembros/nicollette_grace.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
               break;
             case 6:
               foto = '../img/ft6.png';
               nombre = 'Fabian Anderson';
-              apodo = '" Falta Apodo "';
+              apodo = '" Fabian "';
               cargo = 'Prospect';
               ruta = '';
+              break;
+            case 7:
+              foto = '../img/ft7.png';
+              nombre = 'Robinson Gonzalez';
+              apodo = '" K-Chete "';
+              cargo = 'Miembro';
+              ruta = '<a href="miembros/robinson_gonzalez.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
               break;
             default:
               break;

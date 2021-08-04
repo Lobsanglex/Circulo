@@ -78,7 +78,7 @@ header .navigation li a
     font-family: "font_cdh";
     font-size: 2em;
 }
-/* header .navigation li a:hover
+header .navigation li a:hover
 {
     animation: plop .9s infinite alternate;
 }
@@ -89,7 +89,7 @@ header .navigation li a
     100%{
         text-shadow: 0 0 20px rgb(51, 43, 46);
     }
-} */
+}
 .content
 {
     position: relative;
@@ -119,9 +119,7 @@ header .navigation li a
 #resultado
 {
     font-family: "Indie Flower", cursive;
-    /* font-family: "plop"; */
     font-size: 1.8em;
-    /* font-weight: bold; */
 }
 #casilla_miembros h2
 {
