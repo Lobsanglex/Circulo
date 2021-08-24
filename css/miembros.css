@@ -253,7 +253,7 @@
         margin-left: 32.5%;
     }
 }
-@media (max-width: 625px){
+@media (max-width: 667px){
     .content .ficha .content_f p
     {
         position: relative;
@@ -275,7 +275,7 @@
         margin-left: -110px !important;
     }
 }
-@media (max-width: 501px) {
+@media (max-width: 502px) {
     .ficha .f1
     {
         display: none;
