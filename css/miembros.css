@@ -345,3 +345,50 @@
         margin-left: 24%;
     }
 }
+@media (max-width: 375px){
+    .insta
+    {
+        margin-top: 15px;
+        margin-left: 45px;
+    }
+    .redes_sociales a:nth-child(1)
+    {
+        margin-top: 60px !important;
+        margin-left: -30px !important;
+        font-size: .8em;
+    }
+    .whats
+    {   
+        margin-top: 15px;
+        margin-left: 180px;
+    }
+    .redes_sociales a:nth-child(2)
+    {
+        margin-top: -16px !important;
+        margin-left: 110px !important;
+        font-size: .8em;
+    }
+    .sci
+    {
+        margin-left: 12%;
+    }
+    .content .ficha .content_f img
+    {
+        top: -15px;
+        left: 15px;
+        z-index: -1;
+        width: 270px;
+        height: 190px;
+    }
+    .content .ficha:hover .content_f img
+    {
+        top: -15px;
+        left: 15px;
+        z-index: -1;
+        width: 270px;
+        height: 190px;
+    }
+    #espada{
+        margin-left: -20px;
+    }
+}
