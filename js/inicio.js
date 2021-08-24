@@ -96,9 +96,9 @@
             eti += "    </div>";
             eti += "  </div>";
             eti += "  <div class='content_t'>";
-            eti += "    <a href='#'>";
-            eti += "      <i class='fa fa-whatsapp' aria-hidden='true'></i>";
-            eti += "    </a>";
+            // eti += "    <a href='#'>";
+            // eti += "      <i class='fa fa-whatsapp' aria-hidden='true'></i>";
+            // eti += "    </a>";
             eti += fundador;
             eti += "    <h3>"+nombre+"</h3>";
             eti += "    <h4 class='apodo'>"+apodo+"</h4>";
@@ -108,7 +108,6 @@
             eti += "    </div>";
             eti += "  </div>";
             eti += "</div>";
-            // eti += "<a href='miembros/miembro"+n+".html'>Ver más</a>";
             document.getElementById('casilla_miembros').innerHTML = eti;
         }
 

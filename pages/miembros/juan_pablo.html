@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>CDH - Juan Pablo</title>
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="../../css/inicio.css">
@@ -20,32 +20,57 @@
             <ul class="navigation">
                 <li><a href="../inicio.html">Inicio</a></li>
                 <li><a href="../el_club.html">El Club</a></li>
-                <li><a href="../contacto.html">Contacto</a></li>
                 <li><a href="../rutas.html">Rutas</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
             </ul>
         </header>
         <div class="content">
             <div class="ficha">
                 <div class="content_f">
-                    <h2>01</h2>
-                    <h3>Card One</h3>
-                    <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Asperiores nam recusandae illo 
-                        odio reprehenderit deserunt culpa eaque 
-                        hic fugiat rem vel, accusantium maxime amet. 
-                        Repudiandae ab inventore officia deleniti recusandae!</p>
+                    <!-- <h2> -->
+                    <img src="../../img/moto_p.png" alt="Vigago 750">
+                    <!-- </h2> -->
+                    <h3>Tio Palo</h3>
+                    <p><strong>Pablo Fuentes</strong>, miembro fundador y presidente
+                    del Circulo de Hierro.</p>
+                    <p>Moto en la actualidad, <strong>Yamaha Virago 750cc alias "LA TOXÍCA"</strong>.</p>
+                    <p>Tatuador Profesional por más de 10 años.</p>
                 </div>
-                <img src="../../img/f1.svg">
+                <img src="../../img/pablo.png" class="f1">
+                <div class="redes_sociales">
+                    <a href="https://www.instagram.com/pablotattoonew/" target="_blank">
+                        <img src="../../img/instagram.png" class="insta">
+                        pablotattoonew
+                    </a>
+                    <a href="https://wa.me/+56967684602?text=Hola,%20" target="_blank">
+                        <img src="../../img/whasa.png" class="whats">
+                        +56967684602
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="volver">
+            <img src="../../img/espada.svg" id="espada" onclick="volver()">
+        </div>
         <ul class="sci">
-            <li><a href=""><img src="../../img/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="../../img/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="../../img/instagram.png" alt=""></a></li>
+            <li>
+                <a href="https://www.facebook.com/circulo.dehierro.568" target="_blank">
+                    <img src="../../img/facebook.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://chat.whatsapp.com/B8X8qFQOgD74JsvXNDd4Uq" target="_blank">
+                    <img src="../../img/whasa.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/circulo_de_hierro/?hl=es" target="_blank">
+                    <img src="../../img/instagram.png" alt="">
+                </a>
+            </li>
         </ul>
     </section>
-    <script type="text/javascript" src="../../js/vanilla-tilt.js"></script>
+    <!-- <script type="text/javascript" src="../../js/vanilla-tilt.js"></script>
     <script>
         VanillaTilt.init(document.querySelector(".ficha"), {
 		max: 25,
@@ -53,13 +78,16 @@
         glare: true,
         "max-glare": 1,
 	});
-    </script>
+    </script> -->
     <script>
         function toggleMenu(){
             const menuToggle = document.querySelector('.toggle');
             const navigation = document.querySelector('.navigation')
             menuToggle.classList.toggle('active')
             navigation.classList.toggle('active')
+        }
+        function volver(){
+            window.location.href = "../inicio.html";
         }
     </script>
 </body>
