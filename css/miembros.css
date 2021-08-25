@@ -275,7 +275,7 @@
         margin-left: -110px !important;
     }
 }
-@media (max-width: 502px) {
+@media (max-width: 525px) {
     .ficha .f1
     {
         display: none;
