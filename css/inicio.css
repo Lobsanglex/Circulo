@@ -25,7 +25,8 @@ section
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #161616;
+    /* background: #161616; */
+    background: black;
 }
 section .circle
 {
@@ -70,13 +71,13 @@ header .navigation li
 header .navigation li a
 {
     display: inline-block;
-    /* color: #fff; */
-    color: #000;
+    color: white;
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
     font-family: "font_cdh";
     font-size: 2em;
+    letter-spacing: 5px;
 }
 header .navigation li a:hover
 {
@@ -84,10 +85,10 @@ header .navigation li a:hover
 }
 @keyframes plop{
     0% {
-        text-shadow: 0 0 1px rgb(229, 238, 223);
+        text-shadow: 0 0 1px rgb(182, 12, 12);
     }
     100%{
-        text-shadow: 0 0 20px rgb(51, 43, 46);
+        text-shadow: 0 0 10px rgb(182, 12, 12),0 0 30px rgb(182, 12, 12),0 0 80px rgb(182, 12, 12);
     }
 }
 .content
@@ -98,6 +99,288 @@ header .navigation li a:hover
     justify-content: space-between;
     align-items: center;
 }
+.content .grupo-inicio
+{
+    position: relative;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/fogata.png");
+    background-size: cover;
+    box-shadow: inset 0px 0px 30px 40px black;
+    /* border: 1px solid green; */
+    top: 190px;
+    z-index: 100000;
+}
+.grupo-inicio .particle-fire1
+{
+    position: absolute;
+    top: 60%;
+    /* left: 45%; */
+    width: 7px;
+    height: 9px;
+    background-color: #efa300;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #d43322);
+    animation: particleUp3 3.5s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.grupo-inicio .particle-fire2
+{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    width: 8px;
+    height: 8px;
+    background-color: #ef5a00;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #d43322);
+    animation: particleUp 4s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.grupo-inicio .particle-fire3
+{
+    position: absolute;
+    top: 60%;
+    /* left: 40%; */
+    width: 5px;
+    height: 6px;
+    background-color: #efa300;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #f8d614);
+    animation: particleUp2 2.5s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.grupo-inicio .particle-fire4
+{
+    position: absolute;
+    top: 60%;
+    left: 52%;
+    width: 5px;
+    height: 7px;
+    background-color: #ef5a00;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #d43322);
+    animation: particleUp 2.9s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.grupo-inicio .particle-fire5
+{
+    position: absolute;
+    top: 60%;
+    /* left: 48%; */
+    width: 7px;
+    height: 9px;
+    background-color: #ac490b;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #d43322);
+    animation: particleUp2 2s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.grupo-inicio .particle-fire6
+{
+    position: absolute;
+    top: 60%;
+    /* left: 39%; */
+    width: 4px;
+    height: 8px;
+    background-color: #ef5a00;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #d43322);
+    animation: particleUp3 3.8s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.grupo-inicio .particle-fire7
+{
+    position: absolute;
+    top: 60%;
+    /* left: 50%; */
+    width: 6px;
+    height: 8px;
+    background-color: #ef5a00;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #d43322);
+    animation: particleUp2 3s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes particleUp
+{
+    0% {
+          opacity: 0;
+        }
+    20% {
+          opacity: 1;
+        }
+    80% {
+          opacity: 0;
+        }
+    100% {
+          opacity: 0;
+          top: -100%;
+          transform: scale(0.5);
+        }
+}
+@keyframes particleUp2
+{
+    0% {
+          opacity: 0;
+          left: 40%;
+        }
+    20% {
+          opacity: 1;
+          left: 50%;
+        }
+    80% {
+          opacity: 1;
+          left: 40%;
+        }
+    100% {
+          opacity: 0;
+          left: 50%;
+          top: -100%;
+          transform: scale(0.5);
+        }
+}
+@keyframes particleUp3
+{
+    0% {
+          opacity: 0;
+          left: 50%;
+        }
+    20% {
+          opacity: 1;
+          left: 30%;
+        }
+    80% {
+          opacity: 0;
+          left: 40%;
+        }
+    100% {
+          opacity: 0;
+          left: 30%;
+          top: -100%;
+          transform: scale(0.5);
+        }
+}
+#m1
+{
+    position: relative;
+    display: flex;
+    top: 20px;
+    left: -240px;
+    z-index: 10;
+    cursor: pointer;
+}
+#m2
+{
+    position: absolute;
+    display: flex;
+    max-width: 180px;
+    top: -110px;
+    left: 60px;
+    z-index: 1;
+    cursor: pointer;
+}
+#m3
+{
+    position: absolute;
+    display: flex;
+    max-width: 190px;
+    top: 10px;
+    /* left: 350px; */
+    left: 580px;
+    z-index: 10;
+    cursor: pointer;
+}
+#m4
+{
+    position: absolute;
+    display: flex;
+    max-width: 200px;
+    top: 10px;
+    left: -50px;
+    z-index: 1;
+    cursor: pointer;
+}
+#m5
+{
+    position: absolute;
+    display: flex;
+    max-width: 140px;
+    top: -100px;
+    left: 480px;
+    z-index: 1;
+    cursor: pointer;
+    /* border: 1px solid greenyellow; */
+}
+#m6
+{
+    position: absolute;
+    display: flex;
+    max-width: 170px;
+    top: -90px;
+    left: 650px;
+    z-index: 1;
+    cursor: pointer;
+    /* animation: aparece 6s; */
+    /* animation-delay: 4s; */
+    /* opacity: 0; */
+}
+#m7
+{
+    position: absolute;
+    display: flex;
+    max-width: 220px;
+    top: -10px;
+    left: 150px;
+    z-index: 1;
+    cursor: pointer;
+    /* animation: aparece 6s; */
+    /* opacity: 0; */
+    /* animation-delay: aparece 1.5s; */
+}
+/* @keyframes aparece{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+.grupo-inicio img
+{
+    width: 180px;
+    height: 500px;
+    object-fit: contain;
+}
+.grupo-inicio img:hover
+{
+    animation: resplandor .8s infinite alternate;
+    /* opacity: 1; */
+}
+@keyframes resplandor{
+    0% {
+        filter: drop-shadow(1px 1px 1px rgb(182, 12, 12));
+        /* opacity: 0.5; */
+        /* filter: blur(3px); */
+        /* transform: scale(1); */
+    }
+    100%{
+        filter: drop-shadow(5px 5px 5px rgb(182, 12, 12));
+        /* opacity: 1; */
+        /* filter: blur(0px); */
+        /* transform: scale(1.18); */
+    }
+}
+
 .content .textBox
 {
     position: relative;
@@ -119,27 +402,19 @@ header .navigation li a:hover
 #resultado
 {
     font-family: "Indie Flower", cursive;
-    font-size: 1.8em;
+    font-size: 1.9em;
     color: rgb(182, 12, 12);
-    text-shadow: 0 0 30px rgb(182, 12, 12);
+    text-shadow: 0 0 10px rgb(182, 12, 12),0 0 30px rgb(182, 12, 12),0 0 80px rgb(182, 12, 12);
+    font-weight: bold;
+    letter-spacing: 8px;
 }
 #casilla_miembros h2
 {
     font-family: "font_cdh";
+    letter-spacing: 6px;
     font-size: 5em;
+    color: white;
 }
-/* .content .textBox a
-{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: #e51e2a;
-    color: #fff;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-} */
 .sci /*Redes sociales footer*/
 {
     position: absolute;
@@ -180,70 +455,6 @@ header .navigation li a:hover
 {
     filter: invert(1);
     transform: scale(0.5);
-}
-
-/**********slider*********/
-.swiper-container 
-{
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.swiper-slide 
-{
-    background-position: center;
-    background-size: cover;
-    /*width: 250px;
-    height: 700px;*/
-    width: 180px;
-    height: 460px;
-    display: flex;
-    justify-content: center;
-}
-.content .imgBox
-{
-    width: 500px;
-    display: flex;
-    justify-content: flex-end;
-}
-.content .imgBox img
-{
-    max-width: 150px;
-}
-.swiper-slide img
-{
-    position: absolute;
-    /* height: 300px; */
-    height: 460px;
-    bottom: 0;
-    max-height: 100%;
-    /* filter: invert(1); */
-    /* border: 1px solid red; */
-}
-.swiper-container-3d
-{
-    perspective: 600px;
-}
-.swiper-slide img:hover
-{
-    animation: resplandor .8s infinite alternate;
-}
-@keyframes resplandor{
-    0% {
-        filter: drop-shadow(1px 1px 1px rgb(182, 12, 12));
-        transform: scale(1);
-    }
-    100%{
-        filter: drop-shadow(5px 5px 5px rgb(182, 12, 12));
-        transform: scale(1.18);
-        /* filter: drop-shadow(5px 5px 5px rgb(219, 214, 214)); */
-        /* filter: drop-shadow(7px 7px 15px rgb(165, 6, 6)); */
-    }
-}
-.swiper-container-3d .swiper-slide-shadow-left,
-.swiper-container-3d .swiper-slide-shadow-right
-{
-    background-image: none;
 }
 
 /*SECTION DE LA TARJETA DE MIEMBRO*/
@@ -358,31 +569,142 @@ header .navigation li a:hover
     color: #000;
 }
 /*SECCION DE LA TARJETA DE MIEMBRO*/
-@media (max-width: 1790px){
-    section .circle
+@media (max-width: 1500px) {
+    header
     {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        padding: 40px;
+    }
+    section
+    {
+        padding: 150px 40px;       
+    }
+    header .logo
+    {
+        margin-left: 35%;
+    }
+    .content .textBox,
+    .content .imgBox
+    {
+        max-width: 100%;
+    }
+    #casilla_miembros
+    {
+        margin-top: -18%;
+        height: 500px;
+        width: 50%;
+    }
+    header .navigation
+    {
+    position: relative;
+    display: flex;
+    z-index: 10;
+    }
+    header .navigation li
+    {
+        list-style: none;
+        margin-right: 45px;
+    }
+    header .navigation li a
+    {
+        display: inline-block;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: "font_cdh";
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+    header .navigation li a:hover
+    {
+        animation: plop .9s infinite alternate;
+    }
+    .card
+    {
+        position: relative;
+        width: 340px;
+        height: 450px;
         background: #fff;
-        clip-path: circle(65% at right -20%);
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid red;
+        top: 0px;
+        right: -10px;
+    }
+    .content .grupo-inicio
+    {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 30px 40px black;
+        top: 200px;
+        z-index: 1;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {   
+        top: 10%;
+        left: -30%;
+        z-index: 10;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m2
+    {
+        height: 65%;
+        top: 5%;
+        left: 15%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m3
+    {
+        top: 10%;
+        left: 73%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m4
+    {
+        top: 5%;
+        left: 0%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m5
+    {
+        height: 65%;
+        top: 5%;
+        left: 63%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m6
+    {
+        top: -10%;
+        left: 82%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m7
+    {
+        top: 5%;
+        left: 27%;
+        cursor: pointer;
+        max-width: 20%;
     }
 }
-@media (max-width: 1200px){
-    section .circle
-    {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        clip-path: circle(65% at right -20%);
-    }
-}
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     header
     {
         padding: 40px;
@@ -396,14 +718,6 @@ header .navigation li a:hover
         /* filter: invert(0%); */
         margin-left: 35%;
     }
-    .sci
-    {
-        left: 40px;
-    }
-    .content
-    {
-        flex-direction: column;
-    }
     .content .textBox,
     .content .imgBox
     {
@@ -411,36 +725,141 @@ header .navigation li a:hover
     }
     #casilla_miembros
     {
-        margin-top: 38%;
-    }
-    .swiper-slide
-    {
-        height: 300px;
+        margin-top: -18%;
+        height: 500px;
+        width: 40%;
     }
     header .navigation
     {
-        display: none;
+    position: relative;
+    display: flex;
+    z-index: 10;
     }
-    header .navigation.active
+    header .navigation li
     {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* background: #e51e2a; */
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
+        list-style: none;
+        margin-right: 45px;
     }
     header .navigation li a
     {
-        margin: 10px 0;
-        font-size: 3em;
-        font-weight: 300;
+        display: inline-block;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: "font_cdh";
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+    header .navigation li a:hover
+    {
+        animation: plop .9s infinite alternate;
+    }
+    .card
+    {
+        position: relative;
+        width: 340px;
+        height: 450px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid red;
+        top: 0px;
+        right: -10px;
+    }
+    .content .grupo-inicio
+    {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 30px 40px black;
+        top: 200px;
+        z-index: 1;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {   
+        top: 10%;
+        left: -30%;
+        z-index: 10;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m2
+    {
+        height: 65%;
+        top: 5%;
+        left: 15%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m3
+    {
+        top: 10%;
+        left: 73%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m4
+    {
+        top: 5%;
+        left: 0%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m5
+    {
+        height: 65%;
+        top: 5%;
+        left: 63%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m6
+    {
+        top: -10%;
+        left: 82%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m7
+    {
+        top: 5%;
+        left: 27%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+}
+@media (max-width: 1100px) {
+    header a
+    {
+        filter: invert(0%);
+        position: relative;
+        max-width: 150px;
+        width: 300px;
+        left: 5%;
+    }
+    header .navigation{display: none;}
+    header .navigation li a
+    {
+        display: inline-block;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: "font_cdh";
+        font-size: 4em;
+        letter-spacing: 5px;
     }
     .toggle
     {
@@ -452,7 +871,8 @@ header .navigation li a:hover
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
-        z-index: 10000;
+        z-index: 1;
+        filter: invert(100%);
     }
     .toggle.active
     {
@@ -462,67 +882,290 @@ header .navigation li a:hover
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    #casilla_miembros h2
+    {
+        font-family: "font_cdh";
+        position: relative;
+        top: -80px;
+        letter-spacing: 6px;
+        font-size: 4em;
+        color: white;
+    }
+    #resultado
+    {
+        position: relative;
+        top: -80px;
+        height: 350px;
+    }
+    .card
+    {
+        position: relative;
+        width: 340px;
+        height: 450px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid red;
+        top: -100px;
+        right: -10px;
+    }
+    .content .grupo-inicio
+    {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 30px 40px black;
+        top: -100px;
+        z-index: 1;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {   
+        top: 10%;
+        left: -30%;
+        z-index: 10;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m2
+    {
+        height: 65%;
+        top: 5%;
+        left: 15%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m3
+    {
+        top: 10%;
+        left: 73%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m4
+    {
+        top: 5%;
+        left: 0%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m5
+    {
+        height: 65%;
+        top: 5%;
+        left: 63%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m6
+    {
+        top: -10%;
+        left: 82%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m7
+    {
+        top: 5%;
+        left: 27%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    .content_t h3
+    {
+        font-size: 1.4em;
+        color: #333;
+        margin-top: 30px;
+    }
+    .sci
+    {
+        margin-left: 38%;
+    }
+}
+@media (max-width: 991px) {
+    header a
+    {
+        filter: invert(0%);
+        position: relative;
+        max-width: 150px;
+        width: 300px;
+        left: 5%;
+    }
+    header .navigation{display: none;}
+    header .navigation li a
+    {
+        display: inline-block;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: "font_cdh";
+        font-size: 4em;
+        letter-spacing: 5px;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1;
+        filter: invert(100%);
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 40px;
+        background: url('../img/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #casilla_miembros h2
+    {
+        font-family: "font_cdh";
+        position: relative;
+        top: -80px;
+        letter-spacing: 6px;
+        font-size: 4em;
+        color: white;
+    }
+    #resultado
+    {
+        position: relative;
+        top: -80px;
+        height: 350px;
+    }
+    .card
+    {
+        position: relative;
+        width: 340px;
+        height: 450px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid red;
+        top: -100px;
+        right: -10px;
+    }
+    .content .grupo-inicio
+    {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 30px 40px black;
+        top: -100px;
+        z-index: 1;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {   
+        top: 10%;
+        left: -30%;
+        z-index: 10;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m2
+    {
+        height: 65%;
+        top: 5%;
+        left: 15%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m3
+    {
+        top: 10%;
+        left: 73%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m4
+    {
+        top: 5%;
+        left: 0%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m5
+    {
+        height: 65%;
+        top: 5%;
+        left: 63%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m6
+    {
+        top: -10%;
+        left: 82%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m7
+    {
+        top: 5%;
+        left: 27%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    .content_t h3
+    {
+        font-size: 1.4em;
+        color: #333;
+        margin-top: 30px;
+    }
+    .sci
+    {
+        margin-left: 38%;
     }
 }
 @media (max-width: 800px) {
-    header
-    {
-        padding: 40px;
-    }
-    section
-    {
-        padding: 150px 40px;       
-    }
-    header .logo
+    header a
     {
         filter: invert(0%);
-        margin-left: 35%;
+        position: relative;
+        max-width: 150px;
+        width: 300px;
+        left: 5%;
     }
-    .sci
-    {
-        left: 40px;
-    }
-    .content
-    {
-        flex-direction: column;
-    }
-    .content .textBox,
-    .content .imgBox
-    {
-        max-width: 100%;
-    }
-    #casilla_miembros
-    {
-        margin-top: 38%;
-    }
-    .swiper-slide
-    {
-        height: 300px;
-    }
-    header .navigation
-    {
-        display: none;
-    }
-    header .navigation.active
-    {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        /* background: #e51e2a; */
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-    }
+    header .navigation{display: none;}
     header .navigation li a
     {
-        margin: 10px 0;
-        font-size: 3em;
-        font-weight: 300;
+        display: inline-block;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: "font_cdh";
+        font-size: 4em;
+        letter-spacing: 5px;
     }
     .toggle
     {
@@ -534,7 +1177,8 @@ header .navigation li a:hover
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
-        z-index: 10000;
+        z-index: 1;
+        filter: invert(100%);
     }
     .toggle.active
     {
@@ -545,17 +1189,20 @@ header .navigation li a:hover
         background-repeat: no-repeat;
         background-position: center;
     }
-}
-@media (max-width: 667px){
-    section .circle
+    #casilla_miembros h2
     {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        clip-path: circle(76% at right -20%);
+        font-family: "font_cdh";
+        position: relative;
+        top: -80px;
+        letter-spacing: 6px;
+        font-size: 4em;
+        color: white;
+    }
+    #resultado
+    {
+        position: relative;
+        top: -80px;
+        height: 350px;
     }
     .card
     {
@@ -566,46 +1213,149 @@ header .navigation li a:hover
         border-radius: 10px;
         overflow: hidden;
         border: 1px solid red;
+        top: -100px;
         right: -10px;
     }
-}
-@media (max-width: 502px){
-    section .circle
-    {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        clip-path: circle(67% at right -20%);
-    }
-    .card
+    .content .grupo-inicio
     {
         position: relative;
-        width: 340px;
-        height: 450px;
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        border: 1px solid red;
-        right: -10px;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 30px 40px black;
+        top: -100px;
+        z-index: 1;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {   
+        top: 10%;
+        left: -30%;
+        z-index: 10;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m2
+    {
+        height: 65%;
+        top: 5%;
+        left: 15%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m3
+    {
+        top: 10%;
+        left: 73%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m4
+    {
+        top: 5%;
+        left: 0%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m5
+    {
+        height: 65%;
+        top: 5%;
+        left: 63%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m6
+    {
+        top: -10%;
+        left: 82%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m7
+    {
+        top: 5%;
+        left: 27%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    .content_t h3
+    {
+        font-size: 1.4em;
+        color: #333;
+        margin-top: 30px;
     }
     .sci
     {
-        margin-left: 22%;
+        margin-left: 28%;
     }
 }
-@media (max-width: 375px) {
-    section .circle
+@media (max-width: 667px) {
+    header a
     {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        clip-path: circle(60% at right -20%);
+        filter: invert(0%);
+        position: relative;
+        max-width: 150px;
+        width: 300px;
+        left: 5%;
+    }
+    header .navigation{display: none;}
+    header .navigation li a
+    {
+        display: inline-block;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: "font_cdh";
+        font-size: 4em;
+        letter-spacing: 5px;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1;
+        filter: invert(100%);
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 40px;
+        background: url('../img/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #casilla_miembros h2
+    {
+        font-family: "font_cdh";
+        position: relative;
+        top: -80px;
+        letter-spacing: 6px;
+        font-size: 4em;
+        color: white;
+    }
+    #resultado
+    {
+        position: relative;
+        top: -80px;
+        height: 350px;
     }
     .card
     {
@@ -616,7 +1366,386 @@ header .navigation li a:hover
         border-radius: 10px;
         overflow: hidden;
         border: 1px solid red;
+        top: -100px;
+        right: -10px;
+    }
+    .content .grupo-inicio
+    {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 30px 40px black;
+        top: -100px;
+        z-index: 1;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {   
+        top: 10%;
+        left: -30%;
+        z-index: 10;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m2
+    {
+        height: 65%;
+        top: 5%;
+        left: 15%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m3
+    {
+        top: 10%;
+        left: 73%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m4
+    {
+        top: 5%;
+        left: 0%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m5
+    {
+        height: 65%;
+        top: 5%;
+        left: 63%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m6
+    {
+        top: -10%;
+        left: 82%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m7
+    {
+        top: 5%;
+        left: 27%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    .content_t h3
+    {
+        font-size: 1.4em;
+        color: #333;
+        margin-top: 30px;
+    }
+    .sci
+    {
+        margin-left: 28%;
+    }
+}
+@media (max-width: 500px) {
+    header a
+    {
+        filter: invert(0%);
+        position: relative;
+        max-width: 150px;
+        width: 300px;
+        left: 18%;
+    }
+    header .navigation{display: none;}
+    header .navigation li a
+    {
+        display: inline-block;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: "font_cdh";
+        font-size: 4em;
+        letter-spacing: 5px;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1;
+        filter: invert(100%);
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 40px;
+        background: url('../img/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #casilla_miembros h2
+    {
+        font-family: "font_cdh";
+        position: relative;
+        top: -80px;
+        letter-spacing: 6px;
+        font-size: 4em;
+        color: white;
+    }
+    #resultado
+    {
+        position: relative;
+        top: -80px;
+        height: 350px;
+    }
+    .card
+    {
+        position: relative;
+        width: 340px;
+        height: 450px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid red;
+        top: -100px;
+        right: -10px;
+    }
+    .content .grupo-inicio
+    {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 30px 40px black;
+        top: -60px;
+        z-index: 1;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {   
+        top: 10%;
+        left: -30%;
+        z-index: 10;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m2
+    {
+        height: 65%;
+        top: 5%;
+        left: 15%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m3
+    {
+        top: 10%;
+        left: 73%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m4
+    {
+        top: 5%;
+        left: 0%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m5
+    {
+        height: 65%;
+        top: 5%;
+        left: 63%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m6
+    {
+        top: -10%;
+        left: 82%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m7
+    {
+        top: 5%;
+        left: 27%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    .content_t h3
+    {
+        font-size: 1.4em;
+        color: #333;
+        margin-top: 30px;
+    }
+    .sci
+    {
+        margin-left: 18%;
+    }
+}
+@media (max-width: 375px) {
+    header a
+    {
+        filter: invert(0%);
+        position: relative;
+        max-width: 150px;
+        width: 300px;
+        left: 10%;
+    }
+    header .navigation{display: none;}
+    header .navigation li a
+    {
+        display: inline-block;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+        font-family: "font_cdh";
+        font-size: 4em;
+        letter-spacing: 5px;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1;
+        filter: invert(100%);
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 40px;
+        background: url('../img/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #casilla_miembros h2
+    {
+        font-family: "font_cdh";
+        position: relative;
+        top: -60px;
+        letter-spacing: 6px;
+        font-size: 4em;
+        color: white;
+    }
+    #resultado
+    {
+        position: relative;
+        top: -60px;
+        height: 450px;
+    }
+    .card
+    {
+        position: relative;
+        width: 340px;
+        height: 450px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid red;
+        top: -60px;
         right: 10px;
+    }
+    .content .grupo-inicio
+    {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 30px 40px black;
+        top: -50px;
+        z-index: 1;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {   
+        top: 10%;
+        left: -30%;
+        z-index: 10;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m2
+    {
+        height: 60%;
+        top: 0%;
+        left: 15%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m3
+    {
+        top: 10%;
+        left: 73%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m4
+    {
+        top: 5%;
+        left: 0%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m5
+    {
+        height: 60%;
+        top: 0%;
+        left: 63%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m6
+    {
+        top: -10%;
+        left: 82%;
+        cursor: pointer;
+        max-width: 20%;
+    }
+    #m7
+    {
+        top: 5%;
+        left: 27%;
+        cursor: pointer;
+        max-width: 20%;
     }
     .content_t h3
     {
