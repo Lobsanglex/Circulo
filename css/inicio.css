@@ -1585,7 +1585,8 @@ header .navigation li a:hover
         width: 40px;
         height: 40px;
         padding: 2px 2px;
-        top: -300% !important;
+        /* top: -300% !important; */
+        top: -300px;
         left: -11%;
         border: 1px solid red;
         text-decoration: none;
