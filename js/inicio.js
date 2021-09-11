@@ -129,7 +129,7 @@
             var contador = document.getElementById("resultado").innerHTML = "";//Limpia el mensaje anterior
             // document.getElementById("resultado").innerHTML = "";//Limpia el mensaje anterior
             nro = Math.floor(Math.random() * (textos.length - 0) + 0);//obtienes el valor aleatorio siempre acorde al tamaño de tu array
-            document.getElementById("resultado").innerHTML = textos[19];//imprime resultado
+            document.getElementById("resultado").innerHTML = textos[nro];//imprime resultado
 
 	          contador.value = cont;
 	          cont++;
