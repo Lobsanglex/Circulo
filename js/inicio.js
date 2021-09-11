@@ -1,8 +1,15 @@
         function toggleMenu(){
             const menuToggle = document.querySelector('.toggle');
-            const navigation = document.querySelector('.navigation')
-            menuToggle.classList.toggle('active')
-            navigation.classList.toggle('active')
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+        function toggleCard(){
+            const menuToggle = document.querySelector('.cross');  
+            menuToggle.classList.toggle('active');
+            document.getElementById('casilla_miembros').innerHTML = '<h2>RECUERDA...</h2><p id="resultado"></p>';
+            aleatorio();
         }
 
         function miembro(n){
@@ -76,9 +83,9 @@
             eti += "    </div>";
             eti += "  </div>";
             eti += "  <div class='content_t'>";
-            // eti += "    <a href='#'>";
+            eti += "    <a href='#' class='cross' onclick='toggleCard();'><span>X</span>";
             // eti += "      <i class='fa fa-whatsapp' aria-hidden='true'></i>";
-            // eti += "    </a>";
+            eti += "    </a>";
             eti += fundador;
             eti += "    <h3>"+nombre+"</h3>";
             eti += "    <h4 class='apodo'>"+apodo+"</h4>";
