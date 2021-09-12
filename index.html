@@ -8,9 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-    <audio loop onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 20000)">
-        <source src="audio_moto.mp3" type="audio/mp3" />
-    </audio>
+    <!-- <audio src="audio_moto.mp3" id="audio" muted></audio> -->
     <div class="text flicker">
         <p class="t1">La cadena más fuerte..</p>
     </div>
@@ -25,4 +23,28 @@
         <p class="t4"><a href="pages/inicio.html">circulo de hierro</a></p>
     </div>
 </body>
+<script> 
+
+function myAudioFunction() {
+var x = document.createElement("AUDIO");
+
+x.setAttribute("src",  "audio_moto.mp3");
+x.setAttribute("autoplay", "");
+x.setAttribute("loop", "");
+document.body.appendChild(x);
+}
+setTimeout("myAudioFunction()",19000);
+    // var sound = document.createElement('audio')
+    // sound.id = 'audio'
+    // sound.loop = 'true'
+    // sound.promise = 'true'
+    // sound.src = 'audio_moto.mp3'
+    // sound.type = 'audio/mp3'
+    // document.body.appendChild(sound)
+    // function playAudio() {
+    //      document.getElementById('audio').play();
+    // }
+    // setTimeout("playAudio()", 9000);
+
+</script>
 </html>
