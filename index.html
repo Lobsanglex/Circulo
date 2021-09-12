@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
+    <audio loop onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 20000)">
+        <source src="audio_moto.mp3" type="audio/mp3" />
+    </audio>
     <div class="text flicker">
         <p class="t1">La cadena más fuerte..</p>
     </div>

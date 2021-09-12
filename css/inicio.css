@@ -473,19 +473,17 @@ header .navigation li a:hover
     position: relative;
     width: 40px;
     height: 40px;
-    padding: 2px 2px;
-    top: -300%;
+    padding: 9px 9px;
+
+    top: -300px;
     left: -11%;
     border: 1px solid red;
     text-decoration: none;
-    border-radius: 20px 0 40px 0;
+    border-bottom-right-radius: 40px;
     color: red;
     font-weight: bold;
 }
-.cross span {
-    margin: 15px 1px;
-    align-items: center;
-}
+
 .card h3
 {
     position: relative;
@@ -612,7 +610,7 @@ header .navigation li a:hover
     }
     section
     {
-        padding: 150px 40px;       
+        padding: 150px 40px;
     }
     header .logo
     {
@@ -754,7 +752,7 @@ header .navigation li a:hover
         object-fit: contain;
     }
     #m1
-    {   
+    {
         top: 10%;
         left: -30%;
         z-index: 10;
@@ -907,7 +905,7 @@ header .navigation li a:hover
         object-fit: contain;
     }
     #m1
-    {   
+    {
         top: 10%;
         left: -30%;
         z-index: 10;
@@ -1060,7 +1058,7 @@ header .navigation li a:hover
         object-fit: contain;
     }
     #m1
-    {   
+    {
         top: 10%;
         left: -30%;
         z-index: 10;
@@ -1213,7 +1211,7 @@ header .navigation li a:hover
         object-fit: contain;
     }
     #m1
-    {   
+    {
         top: 10%;
         left: -30%;
         z-index: 10;
@@ -1389,19 +1387,16 @@ header .navigation li a:hover
         position: relative;
         width: 40px;
         height: 40px;
-        padding: 2px 2px;
-        top: -300%;
+        padding: 9px 9px;
+        top: -300px;
         left: -11%;
         border: 1px solid red;
         text-decoration: none;
-        border-radius: 20px 0 40px 0;
+        border-bottom-right-radius: 40px;
         color: red;
         font-weight: bold;
     }
-    .cross span {
-        margin: 15px 1px;
-        align-items: center;
-    }
+
     .content .grupo-inicio
     {
         position: relative;
@@ -1423,7 +1418,7 @@ header .navigation li a:hover
         object-fit: contain;
     }
     #m1
-    {   
+    {
         top: 10%;
         left: -30%;
         z-index: 10;
@@ -1482,7 +1477,7 @@ header .navigation li a:hover
     }
     .sci
     {
-        margin-left: 18%;
+        margin-left: 22%;
     }
 }
 @media (max-width: 375px) {
@@ -1584,20 +1579,16 @@ header .navigation li a:hover
         position: relative;
         width: 40px;
         height: 40px;
-        padding: 2px 2px;
-        /* top: -300% !important; */
+        padding: 9px 9px;
         top: -300px;
         left: -11%;
         border: 1px solid red;
         text-decoration: none;
-        border-radius: 20px 0 40px 0;
+        border-bottom-right-radius: 40px;
         color: red;
         font-weight: bold;
     }
-    .cross span {
-        margin: 15px 1px;
-        align-items: center;
-    }
+
     .card h3
     {
         position: relative;
@@ -1634,7 +1625,7 @@ header .navigation li a:hover
         object-fit: contain;
     }
     #m1
-    {   
+    {
         top: 10%;
         left: -30%;
         z-index: 10;
