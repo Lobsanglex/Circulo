@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circulo de Hierro</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-    <!-- <audio src="audio_moto.mp3" id="audio" muted></audio> -->
+    
     <div class="text flicker">
         <p class="t1">La cadena más fuerte..</p>
     </div>
@@ -24,27 +24,16 @@
     </div>
 </body>
 <script> 
-
-function myAudioFunction() {
-var x = document.createElement("AUDIO");
-
-x.setAttribute("src",  "audio_moto.mp3");
-x.setAttribute("autoplay", "");
-x.setAttribute("loop", "");
-document.body.appendChild(x);
-}
-setTimeout("myAudioFunction()",19000);
-    // var sound = document.createElement('audio')
-    // sound.id = 'audio'
-    // sound.loop = 'true'
-    // sound.promise = 'true'
-    // sound.src = 'audio_moto.mp3'
-    // sound.type = 'audio/mp3'
-    // document.body.appendChild(sound)
-    // function playAudio() {
-    //      document.getElementById('audio').play();
-    // }
-    // setTimeout("playAudio()", 9000);
-
+    var sound = document.createElement('audio')
+    sound.id = 'audio'
+    sound.loop = 'true'
+    sound.promise = 'true'
+    sound.src = 'audio_moto.mp3'
+    sound.type = 'audio/mp3'
+    document.body.appendChild(sound)
+    function playAudio() {
+         document.getElementById('audio').play();
+    }
+    setTimeout("playAudio()", 19000);
 </script>
 </html>
