@@ -74,3 +74,41 @@ a{
 	90.2% {left:-5px;top:3px;}
 	90.3% {left:0px;top:0px;}
 }
+.svg{
+	/* border: 1px solid red; */
+	position: absolute;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 100%;
+	max-height: 140px;
+	top: 54%;
+	left: 0%;
+}
+.svg #moto{
+	width: 10%;
+	padding-left: 45%;
+	animation: moto 0.3s linear infinite;
+}
+@keyframes moto {
+	0%,100%{
+		transform: translate(0px,0px);
+	}
+	50%{
+		transform: translate(0,3px) rotate(-1deg);
+	}
+}
+.svg #viento{
+	width: 5%;
+	position: absolute;
+	left: 41%;
+	top: 65%;
+	animation: moto .6s linear infinite;
+}
+@keyframes resplandor{
+    0% {
+        filter: drop-shadow(1px 1px 1px rgb(182, 12, 12));
+    }
+    100%{
+        filter: drop-shadow(3px 3px 3px rgb(182, 12, 12));
+    }
+}

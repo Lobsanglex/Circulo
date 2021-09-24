@@ -632,11 +632,11 @@ header .navigation li a:hover
     }
     #casilla_miembros
     {
-        margin-top: 38%;
-    }
-    header .navigation
-    {
-        display: none;
+        position: relative;
+        left: -300px;
+        margin-top: 12%;
+        height: 450px;
+        width: 40%;
     }
     header .navigation.active
     {
@@ -659,6 +659,150 @@ header .navigation li a:hover
         margin: 10px 0;
         font-size: 3em;
         font-weight: 300;
+    }
+    .card
+    {
+        position: relative;
+        width: 340px;
+        height: 450px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid red;
+        top: 0px;
+        right: -10px;
+    }
+    .card h3
+    {
+        position: relative;
+        top: -35px;
+    }
+    .apodo
+    {
+        position: relative;
+        top: -35px;
+    }
+    .card .textIcon_t h4
+    {
+        position: relative;
+        top: -35px;
+    }
+    .cross
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 9px 9px;
+        top: -300px;
+        left: -11%;
+        border: 1px solid red;
+        text-decoration: none;
+        border-bottom-right-radius: 40px;
+        color: red;
+        font-weight: bold;
+    }
+    .content .grupo-inicio
+    {
+        position: relative;
+        width: 55%;
+        height: 400px;
+        display: flex;
+        justify-content: flex-end;
+        background-image: url("../img/fogata.png");
+        background-size: cover;
+        box-shadow: inset 0px 0px 30px 40px black;
+        /* border: 1px solid green; */
+        top: -400px;
+        left: 220px;
+        z-index: 100000;
+    }
+    .grupo-inicio img
+    {
+        max-width: 200px;
+        height: 100%;
+        object-fit: contain;
+    }
+    #m1
+    {
+        position: relative;
+        display: flex;
+        top: 40px;
+        left: -160px;
+        z-index: 10;
+        cursor: pointer;
+    }
+    #m2
+    {
+        position: absolute;
+        display: flex;
+        max-width: 180px;
+        height: 300px;
+        top: -30px;
+        left: 40px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #m3
+    {
+        position: absolute;
+        display: flex;
+        max-width: 190px;
+        top: 20px;
+        left: 440px;
+        z-index: 10;
+        cursor: pointer;
+    }
+    #m4
+    {
+        position: absolute;
+        display: flex;
+        max-width: 200px;
+        top: 10px;
+        left: -50px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #m5
+    {
+        position: absolute;
+        display: flex;
+        max-width: 140px;
+        height: 300px;
+        top: -35px;
+        left: 380px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #m6
+    {
+        position: absolute;
+        display: flex;
+        max-width: 170px;
+        top: -60px;
+        height: 350px;
+        left: 520px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #m7
+    {
+        position: absolute;
+        display: flex;
+        max-width: 220px;
+        top: 10px;
+        left: 130px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .content_t h3
+    {
+        font-size: 1.4em;
+        color: #333;
+        margin-top: 30px;
+    }
+    .sci
+    {
+        margin-left: 36%;
     }
 }
 @media (max-width: 1100px) {
@@ -704,6 +848,30 @@ header .navigation li a:hover
         background-repeat: no-repeat;
         background-position: center;
     }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header .navigation li a
+    {
+        margin: 10px 20%;
+        font-size: 3em;
+        font-weight: 300;
+    }
     #casilla_miembros h2
     {
         font-family: "font_cdh";
@@ -731,11 +899,40 @@ header .navigation li a:hover
         top: -100px;
         right: -10px;
     }
+    .card h3
+    {
+        position: relative;
+        top: -35px;
+    }
+    .apodo
+    {
+        position: relative;
+        top: -35px;
+    }
+    .card .textIcon_t h4
+    {
+        position: relative;
+        top: -35px;
+    }
+    .cross
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 9px 9px;
+        top: -300px;
+        left: -11%;
+        border: 1px solid red;
+        text-decoration: none;
+        border-bottom-right-radius: 40px;
+        color: red;
+        font-weight: bold;
+    }
     .content .grupo-inicio
     {
         position: relative;
         width: 100%;
-        height: 550px;
+        height: 650px;
         display: flex;
         justify-content: flex-end;
         background-image: url("../img/fogata.png");
@@ -811,7 +1008,7 @@ header .navigation li a:hover
     }
     .sci
     {
-        margin-left: 38%;
+        margin-left: 36%;
     }
 }
 @media (max-width: 991px) {
@@ -857,6 +1054,30 @@ header .navigation li a:hover
         background-repeat: no-repeat;
         background-position: center;
     }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header .navigation li a
+    {
+        margin: 10px 20%;
+        font-size: 3em;
+        font-weight: 300;
+    }
     #casilla_miembros h2
     {
         font-family: "font_cdh";
@@ -883,6 +1104,35 @@ header .navigation li a:hover
         border: 1px solid red;
         top: -100px;
         right: -10px;
+    }
+    .card h3
+    {
+        position: relative;
+        top: -35px;
+    }
+    .apodo
+    {
+        position: relative;
+        top: -35px;
+    }
+    .card .textIcon_t h4
+    {
+        position: relative;
+        top: -35px;
+    }
+    .cross
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 9px 9px;
+        top: -300px;
+        left: -11%;
+        border: 1px solid red;
+        text-decoration: none;
+        border-bottom-right-radius: 40px;
+        color: red;
+        font-weight: bold;
     }
     .content .grupo-inicio
     {
@@ -964,7 +1214,7 @@ header .navigation li a:hover
     }
     .sci
     {
-        margin-left: 38%;
+        margin-left: 34%;
     }
 }
 @media (max-width: 800px) {
@@ -1010,6 +1260,30 @@ header .navigation li a:hover
         background-repeat: no-repeat;
         background-position: center;
     }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header .navigation li a
+    {
+        margin: 10px 20%;
+        font-size: 3em;
+        font-weight: 300;
+    }
     #casilla_miembros h2
     {
         font-family: "font_cdh";
@@ -1037,11 +1311,40 @@ header .navigation li a:hover
         top: -100px;
         right: -10px;
     }
+    .card h3
+    {
+        position: relative;
+        top: -35px;
+    }
+    .apodo
+    {
+        position: relative;
+        top: -35px;
+    }
+    .card .textIcon_t h4
+    {
+        position: relative;
+        top: -35px;
+    }
+    .cross
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 9px 9px;
+        top: -300px;
+        left: -11%;
+        border: 1px solid red;
+        text-decoration: none;
+        border-bottom-right-radius: 40px;
+        color: red;
+        font-weight: bold;
+    }
     .content .grupo-inicio
     {
         position: relative;
         width: 100%;
-        height: 350px;
+        height: 450px;
         display: flex;
         justify-content: flex-end;
         background-image: url("../img/fogata.png");
@@ -1117,7 +1420,7 @@ header .navigation li a:hover
     }
     .sci
     {
-        margin-left: 28%;
+        margin-left: 32%;
     }
 }
 @media (max-width: 667px) {
@@ -1163,6 +1466,30 @@ header .navigation li a:hover
         background-repeat: no-repeat;
         background-position: center;
     }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    header .navigation li a
+    {
+        margin: 10px 20%;
+        font-size: 3em;
+        font-weight: 300;
+    }
     #casilla_miembros h2
     {
         font-family: "font_cdh";
@@ -1189,6 +1516,35 @@ header .navigation li a:hover
         border: 1px solid red;
         top: -100px;
         right: -10px;
+    }
+    .card h3
+    {
+        position: relative;
+        top: -35px;
+    }
+    .apodo
+    {
+        position: relative;
+        top: -35px;
+    }
+    .card .textIcon_t h4
+    {
+        position: relative;
+        top: -35px;
+    }
+    .cross
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 9px 9px;
+        top: -300px;
+        left: -11%;
+        border: 1px solid red;
+        text-decoration: none;
+        border-bottom-right-radius: 40px;
+        color: red;
+        font-weight: bold;
     }
     .content .grupo-inicio
     {

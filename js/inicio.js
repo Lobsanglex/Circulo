@@ -5,13 +5,6 @@
             navigation.classList.toggle('active');
         }
 
-        function toggleCard(){
-            const menuToggle = document.querySelector('.cross');  
-            menuToggle.classList.toggle('active');
-            document.getElementById('casilla_miembros').innerHTML = '<h2>RECUERDA...</h2><p id="resultado"></p>';
-            aleatorio();
-        }
-
         function miembro(n){
           var foto = '';
           var fundador = "";
@@ -123,17 +116,25 @@
         textos[18] = '"Seguir cuando no crees que puedes más, es lo que te hace diferente a los demás."';
         textos[19] = '"El día que comprendí que lo único que me voy a llevar es lo que vivo, empecé a vivir lo que me quiero llevar."';
         textos[20] = '"Toma riesgos, si ganas serás más feliz, si pierdes serás más sabio."';
-
-        function aleatorio() {
+        
+        function aleatorio(nro) {
             var cont = 0; 
-            var contador = document.getElementById("resultado").innerHTML = "";//Limpia el mensaje anterior
-            // document.getElementById("resultado").innerHTML = "";//Limpia el mensaje anterior
+            // var contador = "";
+            //var contador = document.getElementById("resultado").innerHTML = "";//Limpia el mensaje anterior
+            // document.getElementById("resultado").innerHTML = 0;//Limpia el mensaje anterior
             nro = Math.floor(Math.random() * (textos.length - 0) + 0);//obtienes el valor aleatorio siempre acorde al tamaño de tu array
             document.getElementById("resultado").innerHTML = textos[nro];//imprime resultado
 
-	          contador.value = cont;
+	          // contador.value = cont;
+	          document.getElementById("resultado").innerHTML.value = cont;
 	          cont++;
         }      
+        function toggleCard(){
+          const menuToggle = document.querySelector('.cross');  
+          menuToggle.classList.toggle('active');
+          document.getElementById('casilla_miembros').innerHTML = '<h2>RECUERDA...</h2><p id="resultado"></p>';
+          aleatorio(Math.floor(Math.random() * (textos.length - 0) + 0));
+      }
         var swiper = new Swiper('.swiper-container', {
           effect: 'coverflow',
           grabCursor: true,

@@ -9,21 +9,24 @@
     <link rel="icon" type="image/png" href="img/logo2.svg"/>
 </head>
 <body>
-    <!-- <a href="pages/inicio.html"> -->
+    
     <a href="#">
-    <div class="text flicker">
-        <p class="t1">La cadena más fuerte..</p>
-    </div>
-	<div class="text flicker">
-        <p class="t2">no es la más larga..</p>
-    </div>
-	<div class="text flicker">
-        <p class="t3">es la de los eslabones más fuertes.</p>
-    </div>
-    </div>
-	<div class="text flicker">
-        <p class="t4">circulo de hierro</p>
-    </div>
+        <div class="svg">
+            <img src="motox.svg" id="moto">
+            <img src="viento.svg" id="viento">
+        </div>
+        <div class="text flicker">
+            <p class="t1">La cadena más fuerte..</p>
+        </div>
+	    <div class="text flicker">
+            <p class="t2">no es la más larga..</p>
+        </div>
+	    <div class="text flicker">
+            <p class="t3">es la de los eslabones más fuertes.</p>
+        </div>
+	    <div class="text flicker">
+            <p class="t4">circulo de hierro</p>
+        </div>
     </a>
     <audio id="audio" src="audio_moto.mp3" autostart="false"></audio>
 </body>
@@ -36,20 +39,9 @@
         body.classList.toggle('on');
         audio.play();
         setTimeout(function() {
-        window.location.href = "pages/inicio.html";
+        // window.location.href = "pages/inicio.html";
+        window.location.href = "pages/home.html";
         }, 7000);
     }
-
-    /*var sound = document.createElement('audio')
-    sound.id = 'audio'
-    sound.loop = 'true'
-    // sound.promise = 'true'
-    sound.src = 'audio_moto.mp3'
-    sound.type = 'audio/mp3'
-    document.body.appendChild(sound)
-    function playAudio() {
-        document.getElementById('audio').play();
-    }
-    setTimeout("playAudio()", 19000);*/
 </script>
 </html>
