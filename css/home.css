@@ -2,7 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
 @font-face {
     font-family: "font_cdh";
-    src: url("../font/beneg___.ttf");
+    /* src: url("../font/beneg___.ttf"); */
+    src: url("../font/GODOFWAR.ttf");
     /* src: url("../font/font_Caligo1.0.ttf"); */
     /* src: url("../font/Maximilian.ttf"); */
     /* src: url("../font/MaximilianZierbuchstaben.ttf"); */
@@ -105,8 +106,11 @@ a .logo{
 .main h2{
     position: relative;
     z-index: 3;
-    font-size: 11vw;
+    /* font-size: 6vw; */
+    font-size: 2vw;
     color: var(--white);
+    max-width: 60%;
+    height: 150px;
     font-family: 'font_cdh';
     text-shadow: 0 20px 30px rgb(0,0,0,0.2);
 }
@@ -133,6 +137,7 @@ a .logo{
 .navigation li a{
     display: inline-flex;
     margin: 5px 0;
+    font-family: 'font_cdh';
     font-size: 1.35em;
     text-decoration: none;
     color: var(--black);
@@ -161,6 +166,64 @@ a .logo{
     font-size: 1.75em;
 }
 
+/*SECCION DE CLUB*/
+.club{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--white);
+    z-index: 4;
+    transition: 0.5s;
+}
+.club.active{
+    right: 0;
+    color: var(--red);
+}
+/*SECCION DE RUTAS*/
+.rutas{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--white);
+    z-index: 4;
+    transition: 0.5s;
+}
+.rutas.active{
+    right: 0;
+    color: var(--red);
+}
+/*SECCION DE CONTACTO*/
+.contacto{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--white);
+    z-index: 4;
+    transition: 0.5s;
+}
+.contacto.active{
+    right: 0;
+    color: var(--red);
+}
+/*MEDIAS*/
 @media (max-width: 768px){
     header{
         padding: 20px;
@@ -171,13 +234,3 @@ a .logo{
     }
 }
 
-
-/* header .logo{
-    position: relative;
-    display: inline-flex;
-    color: var(--black);
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-} */

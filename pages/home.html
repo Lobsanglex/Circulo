@@ -30,22 +30,44 @@
         <video src="../vh1.mp4" autoplay loop muted type="mp4"></video>
         <!-- <video src="../vh2.mp4" autoplay loop muted type="mp4"></video> -->
         <img src="../mask.jpeg" class="mask">
-        <h2>CIRCULO DE HIERRO</h2>
+        <!-- <h2>CIRCULO DE HIERRO</h2> -->
+        <h2 id="resultado"></h2>
+        <!--REDES SOCIALES-->
         <ul class="sci">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li>
+                <a href="https://www.facebook.com/circulo.dehierro.568" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://chat.whatsapp.com/B8X8qFQOgD74JsvXNDd4Uq" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/circulo_de_hierro/?hl=es" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
         </ul>
+    </section>
+    <section class="club">
+        <h2>CLUB</h2>
+    </section>
+    <section class="rutas">
+        <h2>RUTAS</h2>
+    </section>
+    <section class="contacto">
+        <h2>CONTACTO</h2>
     </section>
     <!-- Sidebar Navigation -->
     <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">El Club</a></li>
-        <li><a href="#">Rutas</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#" onclick="ver_pagina(1);return false;">Home</a></li>
+        <li><a href="#" onclick="ver_pagina(2);return false;">El Club</a></li>
+        <li><a href="#" onclick="ver_pagina(3);return false;">Rutas</a></li>
+        <li><a href="#" onclick="ver_pagina(4);return false;">Contacto</a></li>
     </ul>
 
-    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
@@ -53,6 +75,9 @@
         let menuToggle = document.querySelector('.menuToggle')
         let body = document.querySelector('body')
         let navigation = document.querySelector('.navigation')
+        let club = document.querySelector('.club')
+        let rutas = document.querySelector('.rutas')
+        let contacto = document.querySelector('.contacto')
 
         dayNight.onclick = function(){
             body.classList.toggle('dark')
@@ -63,6 +88,35 @@
             menuToggle.classList.toggle('active')
             navigation.classList.toggle('active')
         }
+
+        function ver_pagina(n){
+            if (parseInt(n) === 1){
+                menuToggle.classList.toggle('active');
+                navigation.classList.remove('active');
+                club.classList.remove('active');
+                rutas.classList.remove('active');
+                contacto.classList.remove('active');
+            }else if(parseInt(n) === 2){
+                menuToggle.classList.toggle('active');
+                navigation.classList.remove('active');
+                rutas.classList.remove('active');
+                contacto.classList.remove('active');
+                club.classList.add('active');
+            }else if(parseInt(n) === 3){
+                menuToggle.classList.toggle('active');
+                navigation.classList.remove('active');
+                club.classList.remove('active');
+                contacto.classList.remove('active');
+                rutas.classList.add('active');
+            }else{
+                menuToggle.classList.toggle('active');
+                navigation.classList.remove('active');
+                club.classList.remove('active');
+                rutas.classList.remove('active');
+                contacto.classList.add('active');
+            }
+        }
     </script>
+    <script src="../js/inicio.js"></script>
 </body>
 </html>
