@@ -27,6 +27,7 @@
     --white: #000;
 }
 header{
+    /* position: absolute; */
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -42,6 +43,8 @@ a .logo{
 }
 .righSide{
     display: flex;
+    position: fixed;
+    left: 88.9%;
 }
 .btns{
     position: relative;
@@ -181,6 +184,9 @@ a .logo{
     z-index: 4;
     transition: 0.5s;
     background-image: url("../img/back2.png");
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
 }
 .club.active{
     display: flex;
@@ -196,16 +202,31 @@ a .logo{
     flex-direction: column;
 }
 .club div:nth-child(2){
+    background: var(--white);
     top: 100%;
-    border: 1px solid green;
+}
+.club div:nth-child(2) h1{
+    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: .28em;
 }
 .club div:nth-child(3){
+    background: var(--white);
     top: 200%;
-    border: 1px solid blue;
+}
+.club div:nth-child(3) h1{
+    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: .28em;
 }
 .club div:nth-child(4){
+    background: var(--white);
     top: 300%;
-    border: 1px solid black;
+}
+.club div:nth-child(4) h1{
+    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: .28em;
 }
 .club div p{
     position: absolute;
@@ -219,16 +240,17 @@ a .logo{
 .club div img{
     height: 400px;
 }
-.club div:nth-child(4) span{
-    position: absolute;
-    right: 100px;
+.club span{
+    position: fixed;
+    right: 30px;
     bottom: 40px;
     z-index: 4;
-    display: flex;
+    display: none;
     flex-direction: column;
     color: var(--black);
     font-size: 2em;
     cursor: pointer;
+
 }
 /*SECCION DE RUTAS*/
 .rutas{
@@ -280,13 +302,21 @@ a .logo{
         display: inline-flex;
         width: 35%;
     }
+    .righSide{
+        display: flex;
+        position: fixed;
+        left: 70%;
+    }
     .sci{
         right: 20px;
         bottom: 20px;
     }
     .club {
         background-repeat: no-repeat;
-        background-size: 800px 1200px;
+    }
+    .club div p{
+        width: 350px;
+        font-size: 1em;
     }
 }
 
